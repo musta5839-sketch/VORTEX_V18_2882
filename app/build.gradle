@@ -1,0 +1,15 @@
+
+apply plugin: 'com.android.application'
+android {
+  namespace 'com.vortex.v182882'
+  compileSdk 34
+  defaultConfig {
+    applicationId 'com.vortex.v182882'
+    minSdk 26
+    targetSdk 34
+    externalNativeBuild { cmake {} }
+  }
+  externalNativeBuild {
+    cmake { path "src/main/cpp/CMakeLists.txt" }
+  }
+}

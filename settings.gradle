@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='VORTEX_V18_2882'
